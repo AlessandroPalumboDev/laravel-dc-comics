@@ -5,11 +5,10 @@
     <div class="container">
         <div class="row">
             <div class="col">
-                {{-- <img src="{{ Vite::asset('resources/img/pipistrello.jpg')}}" alt="">
-                <ul>
-                    <li><a href="">prova list item e link</a></li>
-                </ul>
-            </div> --}}
+                <h1>
+                    Homepage
+                </h1>
+            </div>
         </div>
     </div>
 @endsection
