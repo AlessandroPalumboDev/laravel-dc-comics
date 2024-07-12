@@ -15,7 +15,7 @@
                     <p class="card-text">Sale date: {{$comic->sale_date}}</p>
                     <p class="card-text">Price: {{$comic->price}} $</p>
                     <p class="card-text">{{$comic->description}}</p>
-                    <a href="{{route('comics.index')}}" class="btn btn-dark">Indietro</a>
+                    <a href="{{route('comics.index')}}" class="btn btn-dark">Torna alla lista fumetti</a>
                     </div>
                 </div>
             </div>
