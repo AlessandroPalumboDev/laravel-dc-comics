@@ -1,4 +1,4 @@
-<header class="py-2">
+<header class="py-2 px-4">
     <nav class="navbar navbar-expand-lg bg-black">
         <div class="container-fluid">
           <a class="navbar-brand text-light" href="{{route('home')}}">Home</a>
