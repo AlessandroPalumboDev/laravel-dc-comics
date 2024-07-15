@@ -16,13 +16,20 @@
             @foreach ($comics as $comic)
                 
                 <div class="col-3 mt-4">
-                    <div class="card">
+                    <div class="card bg-dark text-light">
                         <img src="{{ $comic->thumb}}" class="card-img-top" alt="{{$comic->title}}">
                         <div class="card-body">
                             <h5 class="card-title">{{$comic->title}}</h5>
                             <p class="card-text">{{$comic->type}}</p>
-                            <a href="{{route('comics.show', $comic->id)}}" class="btn btn-dark">Mostra</a>
-                            <a href="{{route('comics.edit', $comic->id)}}" class="btn btn-dark">Modifica</a>
+
+                            <a href="{{route('comics.show', $comic->id)}}" class="btn btn-outline-light">Mostra</a>
+                            <a href="{{route('comics.edit', $comic->id)}}" class="btn btn-outline-light">Modifica</a>
+
+                            <form action="{{route('comics.destroy', $comic->id)}}" method="POST">
+                                @csrf
+                                @method('DELETE')
+                                <button type="submit" class="btn btn-outline-danger mt-3">Elimina</button>
+                            </form>
                         </div>
                     </div>
                 </div>
