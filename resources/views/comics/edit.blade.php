@@ -30,22 +30,22 @@
 
                       <div class="mb-3">
                         <label for="textInput" class="form-label">Immagine copertina</label>
-                        <input name="thumb" type="text" id="textInput" class="form-control" placeholder="{{old('thumb', $comic->thumb)}}">
+                        <input name="thumb" type="text" id="textInput" class="form-control" value="{{old('thumb', $comic->thumb)}}">
                       </div>
 
                       <div class="mb-3">
                         <label for="textInput" class="form-label">Prezzo</label>
-                        <input name="price" type="number" id="textInput" class="form-control" placeholder="{{old('price', $comic->price)}}">
+                        <input name="price" type="number" id="textInput" class="form-control" value="{{old('price', $comic->price)}}">
                       </div>
 
                       <div class="mb-3">
                         <label for="textInput" class="form-label">Serie</label>
-                        <input name="series" type="text" id="textInput" class="form-control" placeholder="{{old('series', $comic->series)}}">
+                        <input name="series" type="text" id="textInput" class="form-control" value="{{old('series', $comic->series)}}">
                       </div>
 
                       <div class="mb-3">
                         <label for="textInput" class="form-label">Data vendita</label>
-                        <input name="sale_date" type="date" id="textInput" class="form-control" placeholder="{{old('sale_date', $comic->sale_date)}}">
+                        <input name="sale_date" type="date" id="textInput" class="form-control" value="{{old('sale_date', $comic->sale_date)}}">
                       </div>
 
                       <div class="mb-3">
