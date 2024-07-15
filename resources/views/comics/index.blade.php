@@ -22,6 +22,7 @@
                             <h5 class="card-title">{{$comic->title}}</h5>
                             <p class="card-text">{{$comic->type}}</p>
                             <a href="{{route('comics.show', $comic->id)}}" class="btn btn-dark">Mostra</a>
+                            <a href="{{route('comics.edit', $comic->id)}}" class="btn btn-dark">Modifica</a>
                         </div>
                     </div>
                 </div>
