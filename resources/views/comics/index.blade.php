@@ -25,9 +25,9 @@
                             <a href="{{route('comics.show', $comic->id)}}" class="btn btn-outline-light">Mostra</a>
                             <a href="{{route('comics.edit', $comic->id)}}" class="btn btn-outline-light">Modifica</a>
 
-                            <button type="button" class="btn btn-outline-danger"data-bs-toggle="modal" data-bs-target="#exampleModal">Elimina</button>
+                            <button type="button" class="btn btn-outline-danger"data-bs-toggle="modal" data-bs-target="#exampleModal{{$comic->id}}">Elimina</button>
 
-                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal fade" id="exampleModal{{$comic->id}}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                 <div class="modal-dialog ">
                                   <div class="modal-content bg-dark">
                                     <div class="modal-header">
