@@ -25,11 +25,39 @@
                             <a href="{{route('comics.show', $comic->id)}}" class="btn btn-outline-light">Mostra</a>
                             <a href="{{route('comics.edit', $comic->id)}}" class="btn btn-outline-light">Modifica</a>
 
-                            <form action="{{route('comics.destroy', $comic->id)}}" method="POST">
+                            <button type="button" class="btn btn-outline-danger"data-bs-toggle="modal" data-bs-target="#exampleModal">Elimina</button>
+
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog ">
+                                  <div class="modal-content bg-dark">
+                                    <div class="modal-header">
+                                      <h1 class="modal-title fs-5 text-uppercase text-danger" id="exampleModalLabel">Attenzione!</h1>
+                                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                      <p>
+                                        Se premi su elimina il fumetto verrà eliminato definitivamente
+                                      </p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-outline-light" data-bs-dismiss="modal">Close</button>
+
+                                        <form action="{{route('comics.destroy', $comic->id)}}" method="POST">
+                                            @csrf
+                                            @method('DELETE')
+                                            <button type="submit" class="btn btn-outline-danger">Elimina</button>
+                                        </form>
+
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+
+                            {{-- <form action="{{route('comics.destroy', $comic->id)}}" method="POST">
                                 @csrf
                                 @method('DELETE')
                                 <button type="submit" class="btn btn-outline-danger mt-3">Elimina</button>
-                            </form>
+                            </form> --}}
                         </div>
                     </div>
                 </div>
