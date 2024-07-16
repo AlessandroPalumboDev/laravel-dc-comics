@@ -22,7 +22,13 @@ class FormValidationRequest extends FormRequest
     public function rules(): array
     {
         return [
-            //
+            'title' => 'required|string|max:255',
+            'description' => 'nullable|string',
+            'thumb' => 'nullable|string|max:512',
+            'price' => 'required|decimal:2',
+            'series' => 'nullable|string',
+            'sale_date' => 'required|date',
+            'type' => 'nullable|string',
         ];
     }
 }
