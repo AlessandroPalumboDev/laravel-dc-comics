@@ -28,32 +28,32 @@
 
                       <div class="mb-3">
                         <label for="textInput" class="form-label">Titolo OBBLIGATORIO</label>
-                        <input name="title" type="text" id="textInput" class="form-control" placeholder="Titolo">
+                        <input name="title" type="text" id="textInput" class="form-control" value="{{old('title')}}"">
                       </div>
 
                       <div class="mb-3">
                         <label for="textInput" class="form-label">Descrizione</label>
-                        <input name="description" type="text" id="textInput" class="form-control" placeholder="Descrizione">
+                        <input name="description" type="text" id="textInput" class="form-control" value="{{old('description')}}">
                       </div>
 
                       <div class="mb-3">
                         <label for="textInput" class="form-label">Immagine copertina</label>
-                        <input name="thumb" type="text" id="textInput" class="form-control" placeholder="Immagine copertina">
+                        <input name="thumb" type="text" id="textInput" class="form-control" value="{{old('thumb')}}">
                       </div>
 
                       <div class="mb-3">
                         <label for="textInput" class="form-label">Prezzo OBBLIGATORIO</label>
-                        <input name="price" type="number" id="textInput" class="form-control" placeholder="Prezzo">
+                        <input name="price" type="number" id="textInput" class="form-control" value="{{old('price')}}">
                       </div>
 
                       <div class="mb-3">
                         <label for="textInput" class="form-label">Serie</label>
-                        <input name="series" type="text" id="textInput" class="form-control" placeholder="Serie">
+                        <input name="series" type="text" id="textInput" class="form-control" value="{{old('series')}}">
                       </div>
 
                       <div class="mb-3">
                         <label for="textInput" class="form-label">Data vendita OBBLIGATORIO</label>
-                        <input name="sale_date" type="date" id="textInput" class="form-control" placeholder="Data vendita">
+                        <input name="sale_date" type="date" id="textInput" class="form-control" value="{{old('sale_date')}}">
                       </div>
 
                       <div class="mb-3">
