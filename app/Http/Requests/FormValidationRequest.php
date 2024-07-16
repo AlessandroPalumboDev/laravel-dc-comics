@@ -31,4 +31,17 @@ class FormValidationRequest extends FormRequest
             'type' => 'nullable|string',
         ];
     }
+
+    public function messages()
+    {
+        return [
+            'title' => 'Il titolo è obbligatorio e deve avere un minimo di 3 e un massimo di 255 caratteri',
+            'description' => 'La descrizione può essere al massimo di 900 caratteri',
+            'thumb' => "L' indirizzo dell'immagine è troppo lungo",
+            'price' => 'Il prezzo è obbligatorio',
+            'series' => 'La serie non può essere un numero',
+            'sale_date' => 'La data di vendita è obbligatoria',
+            'type' => 'Scegliere una tra le opzioni',
+        ];
+    }
 }
