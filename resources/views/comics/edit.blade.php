@@ -30,31 +30,61 @@
                       <div class="mb-3">
                         <label for="textInput" class="form-label">Titolo</label>
                         <input name="title" type="text" id="textInput" class="form-control" value="{{old('title', $comic->title)}}">
+                        @foreach ($errors->get('title') as $message )
+                          <p class="text-danger">
+                            {{ $message}}
+                          </p>
+                        @endforeach
                       </div>
 
                       <div class="mb-3">
                         <label for="textInput" class="form-label">Descrizione</label>
                         <input name="description" type="text" id="textInput" class="form-control" value="{{old('description', $comic->description)}}">
+                        @foreach ($errors->get('title') as $message )
+                          <p class="text-danger">
+                            {{ $message}}
+                          </p>
+                        @endforeach
                       </div>
 
                       <div class="mb-3">
                         <label for="textInput" class="form-label">Immagine copertina</label>
                         <input name="thumb" type="text" id="textInput" class="form-control" value="{{old('thumb', $comic->thumb)}}">
+                        @foreach ($errors->get('title') as $message )
+                          <p class="text-danger">
+                            {{ $message}}
+                          </p>
+                        @endforeach
                       </div>
 
                       <div class="mb-3">
                         <label for="textInput" class="form-label">Prezzo</label>
                         <input name="price" type="number" id="textInput" class="form-control" value="{{old('price', $comic->price)}}">
+                        @foreach ($errors->get('title') as $message )
+                          <p class="text-danger">
+                            {{ $message}}
+                          </p>
+                        @endforeach
                       </div>
 
                       <div class="mb-3">
                         <label for="textInput" class="form-label">Serie</label>
                         <input name="series" type="text" id="textInput" class="form-control" value="{{old('series', $comic->series)}}">
+                        @foreach ($errors->get('title') as $message )
+                          <p class="text-danger">
+                            {{ $message}}
+                          </p>
+                        @endforeach
                       </div>
 
                       <div class="mb-3">
                         <label for="textInput" class="form-label">Data vendita</label>
                         <input name="sale_date" type="date" id="textInput" class="form-control" value="{{old('sale_date', $comic->sale_date)}}">
+                        @foreach ($errors->get('title') as $message )
+                          <p class="text-danger">
+                            {{ $message}}
+                          </p>
+                        @endforeach
                       </div>
 
                       <div class="mb-3">
@@ -63,6 +93,11 @@
                           <option>comic book</option>
                           <option>graphic novel</option>
                         </select>
+                        @foreach ($errors->get('title') as $message )
+                          <p class="text-danger">
+                            {{ $message}}
+                          </p>
+                        @endforeach
                       </div>
 
                       <button type="submit" class="btn btn-dark mt-3">Conferma modifica fumetto</button>

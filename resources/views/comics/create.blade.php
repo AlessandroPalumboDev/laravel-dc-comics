@@ -29,31 +29,61 @@
                       <div class="mb-3">
                         <label for="textInput" class="form-label">Titolo OBBLIGATORIO</label>
                         <input name="title" type="text" id="textInput" class="form-control" value="{{old('title')}}"">
+                        @foreach ($errors->get('title') as $message )
+                          <p class="text-danger">
+                            {{ $message}}
+                          </p>
+                        @endforeach
                       </div>
 
                       <div class="mb-3">
                         <label for="textInput" class="form-label">Descrizione</label>
                         <input name="description" type="text" id="textInput" class="form-control" value="{{old('description')}}">
+                        @foreach ($errors->get('title') as $message )
+                          <p class="text-danger">
+                            {{ $message}}
+                          </p>
+                        @endforeach
                       </div>
 
                       <div class="mb-3">
                         <label for="textInput" class="form-label">Immagine copertina</label>
                         <input name="thumb" type="text" id="textInput" class="form-control" value="{{old('thumb')}}">
+                        @foreach ($errors->get('title') as $message )
+                          <p class="text-danger">
+                            {{ $message}}
+                          </p>
+                        @endforeach
                       </div>
 
                       <div class="mb-3">
                         <label for="textInput" class="form-label">Prezzo OBBLIGATORIO</label>
                         <input name="price" type="number" id="textInput" class="form-control" value="{{old('price')}}">
+                        @foreach ($errors->get('title') as $message )
+                          <p class="text-danger">
+                            {{ $message}}
+                          </p>
+                        @endforeach
                       </div>
 
                       <div class="mb-3">
                         <label for="textInput" class="form-label">Serie</label>
                         <input name="series" type="text" id="textInput" class="form-control" value="{{old('series')}}">
+                        @foreach ($errors->get('title') as $message )
+                          <p class="text-danger">
+                            {{ $message}}
+                          </p>
+                        @endforeach
                       </div>
 
                       <div class="mb-3">
                         <label for="textInput" class="form-label">Data vendita OBBLIGATORIO</label>
                         <input name="sale_date" type="date" id="textInput" class="form-control" value="{{old('sale_date')}}">
+                        @foreach ($errors->get('title') as $message )
+                          <p class="text-danger">
+                            {{ $message}}
+                          </p>
+                        @endforeach
                       </div>
 
                       <div class="mb-3">
@@ -62,6 +92,11 @@
                           <option>comic book</option>
                           <option>graphic novel</option>
                         </select>
+                        @foreach ($errors->get('title') as $message )
+                          <p class="text-danger">
+                            {{ $message}}
+                          </p>
+                        @endforeach
                       </div>
 
                       <button type="submit" class="btn btn-dark mt-3">Aggiungi questo fumetto</button>
