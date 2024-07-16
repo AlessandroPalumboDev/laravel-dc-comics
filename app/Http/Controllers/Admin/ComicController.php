@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Comic;
+use App\Http\Requests\FormValidationRequest;
 
 class ComicController extends Controller
 {
@@ -29,7 +30,7 @@ class ComicController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(Request $request)
+    public function store(FormValidationRequest $request)
     {
         $data = $request->all();
 
@@ -76,7 +77,7 @@ class ComicController extends Controller
      * Update the specified resource in storage.
      */
     // public function update(Request $request, string $id)
-    public function update(Request $request, Comic $comic)
+    public function update(FormValidationRequest $request, Comic $comic)
     {
         $data = $request->all();
         $comic->update($data); // non ha bisogno di save anche se non faccio il mapping a mano

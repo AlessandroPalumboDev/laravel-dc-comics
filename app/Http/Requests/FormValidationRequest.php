@@ -22,8 +22,8 @@ class FormValidationRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'title' => 'required|string|max:255',
-            'description' => 'nullable|string',
+            'title' => 'required|string|max:255|min:3',
+            'description' => 'nullable|string|max:900',
             'thumb' => 'nullable|string|max:512',
             'price' => 'required|decimal:2',
             'series' => 'nullable|string',
