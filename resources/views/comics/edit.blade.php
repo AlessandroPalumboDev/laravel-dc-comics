@@ -29,75 +29,75 @@
 
                       <div class="mb-3">
                         <label for="textInput" class="form-label">Titolo</label>
-                        <input name="title" type="text" id="textInput" class="form-control" value="{{old('title', $comic->title)}}">
-                        @foreach ($errors->get('title') as $message )
-                          <p class="text-danger">
+                        <input name="title" type="text" id="textInput" class="form-control  @error("title") is-invalid border-danger @enderror" value="{{old('title', $comic->title)}}">
+                        @error("title")
+                          <p class="invalid-feedback">
                             {{ $message}}
                           </p>
-                        @endforeach
+                        @enderror
                       </div>
 
                       <div class="mb-3">
                         <label for="textInput" class="form-label">Descrizione</label>
-                        <input name="description" type="text" id="textInput" class="form-control" value="{{old('description', $comic->description)}}">
-                        @foreach ($errors->get('title') as $message )
-                          <p class="text-danger">
+                        <input name="description" type="text" id="textInput" class="form-control  @error("description") is-invalid border-danger @enderror" value="{{old('description', $comic->description)}}">
+                        @error("description")
+                          <p class="invalid-feedback">
                             {{ $message}}
                           </p>
-                        @endforeach
+                        @enderror
                       </div>
 
                       <div class="mb-3">
                         <label for="textInput" class="form-label">Immagine copertina</label>
-                        <input name="thumb" type="text" id="textInput" class="form-control" value="{{old('thumb', $comic->thumb)}}">
-                        @foreach ($errors->get('title') as $message )
-                          <p class="text-danger">
+                        <input name="thumb" type="text" id="textInput" class="form-control  @error("thumb") is-invalid border-danger @enderror" value="{{old('thumb', $comic->thumb)}}">
+                        @error("thumb")
+                          <p class="invalid-feedback">
                             {{ $message}}
                           </p>
-                        @endforeach
+                        @enderror
                       </div>
 
                       <div class="mb-3">
                         <label for="textInput" class="form-label">Prezzo</label>
-                        <input name="price" type="number" id="textInput" class="form-control" value="{{old('price', $comic->price)}}">
-                        @foreach ($errors->get('title') as $message )
-                          <p class="text-danger">
+                        <input name="price" type="number" id="textInput" class="form-control  @error("price") is-invalid border-danger @enderror" value="{{old('price', $comic->price)}}">
+                        @error("price")
+                          <p class="invalid-feedback">
                             {{ $message}}
                           </p>
-                        @endforeach
+                        @enderror
                       </div>
 
                       <div class="mb-3">
                         <label for="textInput" class="form-label">Serie</label>
-                        <input name="series" type="text" id="textInput" class="form-control" value="{{old('series', $comic->series)}}">
-                        @foreach ($errors->get('title') as $message )
-                          <p class="text-danger">
+                        <input name="series" type="text" id="textInput" class="form-control  @error("series") is-invalid border-danger @enderror" value="{{old('series', $comic->series)}}">
+                        @error("series")
+                          <p class="invalid-feedback">
                             {{ $message}}
                           </p>
-                        @endforeach
+                        @enderror
                       </div>
 
                       <div class="mb-3">
                         <label for="textInput" class="form-label">Data vendita</label>
-                        <input name="sale_date" type="date" id="textInput" class="form-control" value="{{old('sale_date', $comic->sale_date)}}">
-                        @foreach ($errors->get('title') as $message )
-                          <p class="text-danger">
+                        <input name="sale_date" type="date" id="textInput" class="form-control  @error("sale_date") is-invalid border-danger @enderror" value="{{old('sale_date', $comic->sale_date)}}">
+                        @error("sale_date")
+                          <p class="invalid-feedback">
                             {{ $message}}
                           </p>
-                        @endforeach
+                        @enderror
                       </div>
 
                       <div class="mb-3">
-                        <label for="select" class="form-label">Tipo</label>
-                        <select name="type" id="select" class="form-select">
+                        <label for="select" class="form-label ">Tipo</label>
+                        <select name="type" id="select" class="form-select @error("type") is-invalid border-danger @enderror">
                           <option>comic book</option>
                           <option>graphic novel</option>
                         </select>
-                        @foreach ($errors->get('title') as $message )
-                          <p class="text-danger">
+                        @error("type")
+                          <p class="invalid-feedback">
                             {{ $message}}
                           </p>
-                        @endforeach
+                        @enderror
                       </div>
 
                       <button type="submit" class="btn btn-dark mt-3">Conferma modifica fumetto</button>
