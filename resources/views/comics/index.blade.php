@@ -40,7 +40,7 @@
                                       </p>
                                     </div>
                                     <div class="modal-footer">
-                                        <button type="button" class="btn btn-outline-light" data-bs-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-outline-light" data-bs-dismiss="modal">Chiudi</button>
 
                                         <form action="{{route('comics.destroy', $comic->id)}}" method="POST">
                                             @csrf
