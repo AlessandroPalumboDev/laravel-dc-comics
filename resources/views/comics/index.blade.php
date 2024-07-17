@@ -22,10 +22,10 @@
                             <h5 class="card-title">{{$comic->title}}</h5>
                             <p class="card-text">{{$comic->type}}</p>
 
-                            <a href="{{route('comics.show', $comic->id)}}" class="btn btn-outline-light">Mostra</a>
-                            <a href="{{route('comics.edit', $comic->id)}}" class="btn btn-outline-light">Modifica</a>
+                            <a href="{{route('comics.show', $comic->id)}}" class="btn btn-outline-light mt-2">Mostra</a>
+                            <a href="{{route('comics.edit', $comic->id)}}" class="btn btn-outline-light mt-2">Modifica</a>
 
-                            <button type="button" class="btn btn-outline-danger"data-bs-toggle="modal" data-bs-target="#exampleModal{{$comic->id}}">Elimina</button>
+                            <button type="button" class="btn btn-outline-danger mt-2"data-bs-toggle="modal" data-bs-target="#exampleModal{{$comic->id}}">Elimina</button>
 
                             <div class="modal fade" id="exampleModal{{$comic->id}}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                 <div class="modal-dialog ">
