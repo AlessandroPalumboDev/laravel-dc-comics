@@ -32,7 +32,7 @@ class ComicController extends Controller
      */
     public function store(FormValidationRequest $request)
     {
-        $data = $request->all();
+        $data = $request->validated(); //non più all() usando il FormValidationRequest
 
         $comic = new Comic();
 
